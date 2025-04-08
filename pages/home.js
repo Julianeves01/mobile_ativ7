@@ -1,12 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
 
-export default function DrawerScreen() {
+export default function HomeScreen() {
     return (
         <View style={styles.container}>
-            <View style={styles.content}>
-            <Text style={styles.text}>Drawer Screen Julinha</Text>
-        </View>
+            <Text style={styles.title}>Drawer Screen Julinha</Text>
         </View>
     );
 }
@@ -14,17 +13,14 @@ export default function DrawerScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        height: "100%",
+        width: "100%",
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#ff69b4",
     },
-    content: {
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    text: {
+    title: {
         fontWeight: "bold",
-        marginTop: 20,
         fontSize: 24,
         color: "#333",
     },

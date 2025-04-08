@@ -1,30 +1,32 @@
 import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
-export default function Drawer2() {
+export default function DetailsScreen() {
     return (
         <View style={styles.container}>
-            <View style={styles.content}>
-            <Text style={styles.text}> Vei que criança fofa </Text>
+            <Text style={styles.title}> Ola amores! </Text>
+            <Text style={styles.text}> Você esta navegando na Details Screen </Text>
         </View>
-    </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
+        height: "100%",
+        width: "100%",
         flex: 1,
         backgroundColor: "#d298c4",
         alignItems: "center",
         justifyContent: "center",
     },
-    content: {
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    text: {
+    title: {
+        marginBottom: 20,
         fontSize: 24,
         fontWeight: "bold",
-        marginTop: 20,
+        color: "#fff",
+    },
+    text: {
+        fontSize: 16,
         color: "#fff",
     },
 });
