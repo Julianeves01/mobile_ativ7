@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet } from "react-native";
 export default function Drawer2() {
     return (
         <View style={styles.container}>
-        <Image source={{uri: "https://i.pinimg.com/736x/4c/11/b6/4c11b6b132ca2ca8731fff433aed05ba.jpg"}} style={styles.image} />
+        <Image source={{uri: "https://i.pinimg.com/736x/1a/f7/32/1af732ea7da0d814dec002b2a24aee29.jpg"}} style={styles.image} />
         <Text style={styles.text}> Vei que amor 😭🎀</Text>
     </View>
     );
@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: "#fff",
         textAlign: "center",
-        paddingHorizontal: 15,
+        paddingHorizontal: 20,
     },
 });

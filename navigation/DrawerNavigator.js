@@ -6,9 +6,9 @@ import Drawer2 from "../pages/Drawer2";
 const Drawer = createDrawerNavigator();
 export default function DrawerNavigator() {
     return (
-        <Drawer.Navigator initialRouteName="Profile">
-        <Drawer.Screen name="Profile" component={DrawerScreen} />
-        <Drawer.Screen name="Place" component={Drawer2} />
+        <Drawer.Navigator initialRouteName="Drawer Screen">
+        <Drawer.Screen name="Drawer Screen" component={DrawerScreen} />
+        <Drawer.Screen name="Drawer Screen 2 " component={Drawer2} />
     </Drawer.Navigator>
     );
 }

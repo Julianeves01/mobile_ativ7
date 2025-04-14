@@ -5,7 +5,7 @@ export default function DrawerScreen() {
     return (
         <View style={styles.container}>
             <Text style={styles.title}> Ola amores! </Text>
-            <Text style={styles.subtitle}> Você está navegando no Drawer Screen 2! </Text>
+            <Text style={styles.subtitle}> Você está navegando na página principal: Drawer Screen! </Text>
             <Text style={styles.description}>Sejam bem vindos! 🎀</Text>
         </View>
     );
