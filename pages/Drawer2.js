@@ -1,41 +1,33 @@
-import { View, Text, StyleSheet } from "react-native";
 import React from "react";
+import { View, Text, Image, StyleSheet } from "react-native";
 
-export default function DrawerScreen() {
+export default function Drawer2() {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}> Ola amores! </Text>
-            <Text style={styles.subtitle}> Você está navegando no Drawer Screen 2! </Text>
-            <Text style={styles.description}>Sejam bem vindos! 🎀</Text>
-        </View>
+        <Image source={{uri: "https://i.pinimg.com/736x/4c/11/b6/4c11b6b132ca2ca8731fff433aed05ba.jpg"}} style={styles.image} />
+        <Text style={styles.text}> Vei que amor 😭🎀</Text>
+    </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
         backgroundColor: "#d298c4",
         padding: 20,
-        alignItems: "center",
-        justifyContent: "center",
     },
-    title: {
-        marginBottom: 10,
-        fontSize: 30,
-        fontWeight: "bold",
-        color: "#fff",
-    },
-    subtitle: {
-        fontSize: 20,
-        color: "#fff",
-        textAlign: "center",
+    image: {
+        width: 300,
+        height: 200,
+        borderRadius: 15,
         marginBottom: 15,
-        paddingHorizontal: 15,
     },
-    description: {
-        fontSize: 30,
+    text: {
+        fontSize: 18,
         color: "#fff",
         textAlign: "center",
-        paddingHorizontal: 20,
+        paddingHorizontal: 15,
     },
 });

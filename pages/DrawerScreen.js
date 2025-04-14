@@ -1,11 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
-
-export default function HomeScreen() {
+export default function DrawerScreen() {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Drawer Screen Julinha</Text>
+            <Text style={styles.title}> Ola amores! </Text>
+            <Text style={styles.subtitle}> Você está navegando no Drawer Screen 2! </Text>
+            <Text style={styles.description}>Sejam bem vindos! 🎀</Text>
         </View>
     );
 }
@@ -13,15 +14,28 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        height: "100%",
-        width: "100%",
-        justifyContent: "center",
+        backgroundColor: "#d298c4",
+        padding: 20,
         alignItems: "center",
-        backgroundColor: "#ff69b4",
+        justifyContent: "center",
     },
     title: {
+        marginBottom: 10,
+        fontSize: 30,
         fontWeight: "bold",
-        fontSize: 24,
-        color: "#333",
+        color: "#fff",
+    },
+    subtitle: {
+        fontSize: 20,
+        color: "#fff",
+        textAlign: "center",
+        marginBottom: 15,
+        paddingHorizontal: 15,
+    },
+    description: {
+        fontSize: 30,
+        color: "#fff",
+        textAlign: "center",
+        paddingHorizontal: 20,
     },
 });
